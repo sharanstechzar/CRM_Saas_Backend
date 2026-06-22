@@ -86,6 +86,7 @@ export default {
         "pages_read_engagement",
         "pages_manage_ads",
         "pages_manage_metadata",
+        "pages_manage_posts",
         "business_management",
       ].join(",");
 

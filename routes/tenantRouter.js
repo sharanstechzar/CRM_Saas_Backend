@@ -32,6 +32,7 @@ import emailRoutes         from "./email.routes.js";
 
 import fileRoutes          from "./files.routes.js";
 import metaRoutes          from "./meta.routes.js";
+import socialRoutes        from "./social.routes.js";
 
 const router = express.Router();
 
@@ -61,5 +62,6 @@ router.use("/email",           emailRoutes);
 
 router.use("/files",           fileRoutes);
 router.use("/meta",            metaRoutes);
+router.use("/social",          socialRoutes);
 
 export default router;

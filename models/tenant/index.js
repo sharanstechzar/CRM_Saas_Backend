@@ -22,6 +22,7 @@ import pricingRiskSchema    from "../schemas/pricingRiskSchema.js";
 import aiChatSchema        from "../schemas/aiChatSchema.js";
 import botHistorySchema         from "../schemas/botHistorySchema.js";
 import metaIntegrationSchema    from "../schemas/metaIntegrationSchema.js";
+import socialPostSchema         from "../schemas/socialPostSchema.js";
 
 const MODEL_MAP = [
   ["User",             userSchema],
@@ -48,6 +49,7 @@ const MODEL_MAP = [
   ["AiChat",           aiChatSchema],
   ["BotHistory",       botHistorySchema],
   ["MetaIntegration",  metaIntegrationSchema],
+  ["SocialPost",       socialPostSchema],
 ];
 
 /**
@@ -93,5 +95,6 @@ export function getTenantModels(conn) {
     AiChat:           conn.model("AiChat"),
     BotHistory:       conn.model("BotHistory"),
     MetaIntegration:  conn.model("MetaIntegration"),
+    SocialPost:       conn.model("SocialPost"),
   };
 }
